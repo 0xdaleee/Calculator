@@ -1,0 +1,126 @@
+.numbers-container {
+  border: 1px solid black;
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 70px;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
+}
+.num-button {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  border: 0px;
+  font-size: 35px;
+}
+#num1 {
+  position: absolute;
+  top: 67%;
+  left: 5%;
+}
+#num2 {
+  position: absolute;
+  top: 67%;
+  left: 28%;
+}
+#num3 {
+  position: absolute;
+  top: 67%;
+  left: 51%;
+}
+#num4 {
+  position: absolute;
+  top: 52%;
+  left: 5%;
+}
+#num5 {
+  position: absolute;
+  top: 52%;
+  left: 28%;
+}
+#num6 {
+  position: absolute;
+  top: 52%;
+  left: 51%;
+}
+#num7 {
+  position: absolute;
+  top: 37%;
+  left: 5%;
+}
+#num8 {
+  position: absolute;
+  top: 37%;
+  left: 28%;
+}
+#num9 {
+  position: absolute;
+  top: 37%;
+  left: 51%;
+}
+#num0 {
+  position: absolute;
+  border-radius: 50px;
+  width: 165px;
+  top: 83%;
+  left: 5%;
+}
+.op-button {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  border: 0px;
+  font-size: 35px;
+}
+#plus {
+  position: absolute;
+  top: 67%;
+  left: 74%;
+}
+#minus {
+  position: absolute;
+  top: 52%;
+  left: 74%;
+}
+#multiply {
+  position: absolute;
+  top: 37%;
+  left: 74%;
+}
+#equals {
+  position: absolute;
+  top: 83%;
+  left: 74%;
+}
+#dot {
+  position: absolute;
+  top: 83%;
+  left: 51%;
+}
+#divide {
+  position: absolute;
+  top: 22%;
+  left: 74%;
+}
+#clear {
+  position: absolute;
+  top: 22%;
+  left: 51%;
+}
+#backspace {
+  font-size: 30px;
+  position: absolute;
+  border-radius: 50px;
+  width: 165px;
+  top: 22%;
+  left: 5%;
+}
+#display {
+  position: absolute;
+  top: 7%;
+  width: 87%;
+  height: 60px;
+  left: 5%;
+}

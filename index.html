@@ -2,24 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- todo add style -->
     <!-- todo add interactive -->
-    <div>
-      <h1 id="Label">LABEL</h1>
+
+    <div class="numbers-container" id="numContainer">
+      <input type="text" id="display" readonly />
+
+      <button id="num1" class="num-button num-active">1</button>
+      <button id="num2" class="num-button">2</button>
+      <button id="num3" class="num-button">3</button>
+      <button id="num4" class="num-button">4</button>
+      <button id="num5" class="num-button">5</button>
+      <button id="num6" class="num-button">6</button>
+      <button id="num7" class="num-button">7</button>
+      <button id="num8" class="num-button">8</button>
+      <button id="num9" class="num-button">9</button>
+      <button id="num0" class="num-button">0</button>
+
+      <button id="divide" class="op-button op-active">/</button>
+      <button id="multiply" class="op-button">x</button>
+      <button id="minus" class="op-button">-</button>
+      <button id="plus" class="op-button">+</button>
+      <button id="equals" class="op-button">=</button>
+
+      <button id="dot" class="op-button">.</button>
+      <button id="clear" class="op-button">AC</button>
+      <button id="backspace" class="op-button">BCKSPCE</button>
     </div>
-    <div class="numbers">
-      <button id="num1" class="num1-active">1</button>
-      <button id="num2">2</button>
-      <button id="num2">3</button>
-      <button id="num2">4</button>
-      <button id="num2">5</button>
-      <button id="num2">6</button>
-      <button id="num2">7</button>
-      <button id="num2">8</button>
-      <button id="num2">9</button>
-      <button id="num2">0</button>
-    </div>
+    <script src="index.js"></script>
   </body>
 </html>
