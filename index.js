@@ -1,21 +1,34 @@
-const label = document.getElementById("label");
-const numContainer = document.getElementById("numContainer");
+const display = document.getElementById("display");
 
-// Single listener on the parent container
-numContainer.addEventListener("click", (event) => {
-  const button = event.target.closest("button");
-  if (!button) return; // Ignore clicks in the container that aren't on a button
+function appendValue(value) {
+  display.value += value;
+}
 
-  // Option A: Replace the label with the clicked number
-  label.textContent = button.textContent.trim();
+function clearDisplay() {
+  display.value = "";
+}
 
-  // (Optional) Option B: If you're building a keypad/PIN display and want to append:
-  // if (label.textContent === "LABEL") label.textContent = "";
-  // label.textContent += button.textContent.trim();
+function deleteLast() {
+  display.value = display.value.slice(0, -1);
+}
 
-  // Update active styling
-  numContainer
-    .querySelectorAll("button")
-    .forEach((btn) => btn.classList.remove("active"));
-  button.classList.add("active");
-});
+/*
+function calculate() {
+  try {
+    let expression = display.value.replace(/×/g, "*");
+    display.value = eval(expression);
+  } catch {
+    display.value = "Error";
+  }
+}
+*/
+
+function appendValue(value) {
+  if (value === "*") {
+    display.value += "×";
+  } else if (value === "/") {
+    display.value += "÷";
+  } else {
+    display.value += value;
+  }
+}
